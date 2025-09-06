@@ -34,6 +34,32 @@
   - opus for deeper reasoning
 
 ## Accessing Claude via the API
+### **5 steps from prompt to response**
+1. Request to server
+- requests should not be made directly from client code
+- api key must remain secret
+- client requests are processed through a server the developer implements
+2. Request to anthropic api
+- requests go through an SDK or plain HTTP request
+- Includes API key, Model, Messages, Max Tokens
+3. model processing
+- tokenization - breaks up sentences and words to tokens
+- embedding - a vector representation of each token
+- contextualization - adjusts embeddings based on its neighbors
+- generation - final embeddings to an output layer that predicts probabilities of the next word
+  - stops when max tokens is reached
+  - stops when EOS (natural end) of a response
+4. response to server
+- response passed back through SDK and developer server
+  - contains
+    - message
+    - usage
+    - stop reason
+5. response to client
+- response passed back to the client
+
+### Basic API requests
+
 
 ## Prompt evaluations 
 
