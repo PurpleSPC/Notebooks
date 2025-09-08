@@ -60,6 +60,11 @@
 
 ### Basic API requests
 
+### Multi Turn Conversations
+- the API does not store any messages
+- to have a conversation:
+  - manually maintain a list of messages in the conversation
+  - provide that list with each new propmpt
 
 ## Prompt evaluations 
 
