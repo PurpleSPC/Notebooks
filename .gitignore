@@ -1,1 +1,4 @@
 Antrhopic_notes/.env
+
+.venv/
+.vscode/
